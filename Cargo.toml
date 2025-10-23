@@ -1,5 +1,5 @@
 [package]
-name = "my_kmeans_lib"
+name = "rust_kmeans"
 version = "0.2.0"
 edition = "2021"
 authors = ["Stefan Lang <stefan.lang@med.lu.se>"]
