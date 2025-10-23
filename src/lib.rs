@@ -33,7 +33,7 @@ impl DataSet {
             let record = result.map_err(|e| anyhow!("Error reading record {}: {}", i, e))?;
             let row: Vec<f32> = record
                 .iter()
-                .map(|x| x.parse::<f32>().unwrap_or(0.0))
+                .map(|x| x.parse::<f32>().unwrap_or(f32::NAN))
                 .collect();
             records.push(row);
         }
