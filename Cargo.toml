@@ -1,0 +1,26 @@
+[package]
+name = "my_kmeans_lib"
+version = "0.2.0"
+edition = "2021"
+authors = ["Stefan Lang <stefan.lang@med.lu.se>"]
+description = "A simple Rust library for reading TSV data into Array2<f32> and performing 3D K-means clustering."
+license = "MIT"
+repository = "https://github.com/stela2502/my_kmeans_lib"
+
+[lib]
+name = "my_kmeans_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "my_kmeans"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"
+csv = "1"
+ndarray = "0.15"
+rand = "0.8"
+clap = { version = "4", features = ["derive"] }
+
+[dev-dependencies]
+approx = "0.5"       # For numeric comparison in tests if needed
