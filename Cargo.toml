@@ -7,13 +7,6 @@ description = "A simple Rust library for reading TSV data into Array2<f32> and p
 license = "MIT"
 repository = "https://github.com/stela2502/my_kmeans_lib"
 
-[lib]
-name = "my_kmeans_lib"
-path = "src/lib.rs"
-
-[[bin]]
-name = "my_kmeans"
-path = "src/main.rs"
 
 [dependencies]
 anyhow = "1"
