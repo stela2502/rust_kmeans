@@ -58,7 +58,7 @@ impl DataSet {
 
     /// Euclidean distance between two 3D points
     #[inline]
-    pub fn e_dist3(a: &[f32; 3], b: &[f32; 3]) -> f32 {
+    fn e_dist3(a: &[f32; 3], b: &[f32; 3]) -> f32 {
         ((a[0] - b[0]).powi(2) + (a[1] - b[1]).powi(2) + (a[2] - b[2]).powi(2)).sqrt()
     }
 
